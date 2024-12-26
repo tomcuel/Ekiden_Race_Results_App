@@ -75,7 +75,7 @@ from PIL import Image, ImageTk # a better rezising
 
 
 ## App preview 
-How to use it : every button is clickable and will redirect you to the corresponding part of the App, you can use it like any app 
+How to use it : every button is clickable and will redirect you to the corresponding part of the App, you can use it like any app. For the login and the sign-up screens, the cursor is directly on the first entry, so we can type as soon as we wanted, and the tabulation and enter key does work here to move to the next entry to continue
 Here is a preview of some screens you will encounter when lauching the app : 
 #### Login screen render
 <img src="./Data/Pictures/login_screen_render.png" alt="login_screen_render" width="350" height="225"/>
