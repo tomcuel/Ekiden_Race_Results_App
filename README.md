@@ -13,24 +13,24 @@
 ```
 Ekiden_Race_Results_App/
 ├── Data/
-│   ├── Pictures/              # contains some useful picture to show in the app and the README
-│   ├── Precomputed_graphs/    # contains the precomputed generic picture for overall rankings
+│   ├── Pictures/              
+│   ├── Precomputed_graphs/    
 │   └── functions and datas
 │
 ├── Test_Tkinter/
-│   ├── tests_done/            # basics test to see how every type of things in working in Tkinter
-│   ├── screens_tests/         # testing the different screen I will later use 
-│   └── first_app_try/         # how I progressively shaped the current app by adding everything together and improving the rendering
+│   ├── tests_done/           
+│   ├── screens_tests/         
+│   └── first_app_try/         
 │
 └── main functions             
 ```
 
 
 ## Direct links to folders 
-* [Data](./Data/) :
+* [Data](./Data/) : contains the files related to the treatment of the results 
     * [Pictures](./Data/Pictures/) : contains some useful picture to show in the app and the README
     * [Precomputed_graphs](./Data/Precomputed_graphs/) : contains the precomputed generic picture for overall rankings
-* [Test Tkinter](./Test_Tkinter/) : 
+* [Test Tkinter](./Test_Tkinter/) : contains the files used to test the Tkinter library
     * [tests done](./Test_Tkinter/tests_done/) : basics test to see how every type of things in working in Tkinter 
     * [screens tests](./Test_Tkinter/screens_tests/) : testing the different screen I will later use 
     * [first app try](./Test_Tkinter/first_app_try/) : how I progressively shaped the current app by adding everything together and improving the rendering
