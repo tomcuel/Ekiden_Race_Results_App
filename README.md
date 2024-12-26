@@ -86,7 +86,7 @@ Here is a preview of some screens you will encounter when lauching the app :
 <img src="./Data/Pictures/signup_screen_render.png" alt="signup_screen_render" width="350" height="225"/>
 
 #### Home screen render
-<img src="./Data/Pictures/home_screen_render.png" alt="home_screen_render" width="350" height="225"/>
+<img src="./Data/Pictures/home_app_screen_render.png" alt="home_app_screen_render" width="350" height="225"/>
 
 #### Search screen render
 <img src="./Data/Pictures/search_screen_render.png" alt="search_screen_render" width="350" height="225"/>
