@@ -293,6 +293,9 @@ class App_Screen(tk.Frame):
                 )
                 button.grid(row=3+2*row_index+2, column=col_index, padx=(20, 20), pady=(10, 10), sticky="nsew")
 
+        # putting back the scrollable frame to the top
+        self.scroll_canvas.yview_moveto(0)
+
     # function to show the team results submenu in the scrollable frame
     def show_team_results_sub_menu(self, event=None):
                 # Clear previous results or placeholder text
@@ -337,7 +340,10 @@ class App_Screen(tk.Frame):
             command=lambda s=self.datas.team_type.WOMEN: self.show_team_results(s, False, "")
         )
         women_team_results_button.grid(row=2, column=2, padx=(20, 20), pady=(10, 10), sticky="nsew")
-    
+
+        # putting back the scrollable frame to the top
+        self.scroll_canvas.yview_moveto(0)
+
     # function to show the individual results submenu in the scrollable frame
     def show_individual_results_sub_menu(self, event=None):
                 # Clear previous results or placeholder text
@@ -379,7 +385,10 @@ class App_Screen(tk.Frame):
                     command=lambda d=infos[0], s=sex_info: self.show_individual_results(d, s, False, "")
                 )
                 button.grid(row=3+2*row_index+1, column=col_index, padx=(20, 20), pady=(10, 10), sticky="nsew")
-
+  
+        # putting back the scrollable frame to the top
+        self.scroll_canvas.yview_moveto(0)
+        
     # Function to format time in hh:mm format
     def format_time(self, value):
         hours = int(value // 3600)
@@ -468,7 +477,10 @@ class App_Screen(tk.Frame):
                 self.scrollable_frame.grid_columnconfigure(col, minsize= cell_width[col])
         for row in range(1, len(teams) + 2):  # Include the header
             self.scrollable_frame.grid_rowconfigure(row, minsize=cell_height)
-          
+        
+        # putting back the scrollable frame to the top
+        self.scroll_canvas.yview_moveto(0)
+
     # function to show the individual results in the scrollable frame with the associated graphics (use in the submenu button or the perfom search results)
     def show_individual_results(self, distance, sex, is_by_name, name):
         # Clear previous results or placeholder text
@@ -566,6 +578,9 @@ class App_Screen(tk.Frame):
                 self.scrollable_frame.grid_columnconfigure(col, minsize= cell_width[col])
         for row in range(1, len(distance_runners) + 2):  # Include the header
             self.scrollable_frame.grid_rowconfigure(row, minsize=cell_height)
+
+        # putting back the scrollable frame to the top
+        self.scroll_canvas.yview_moveto(0)
         
     # function to make the search and display the results in the scrollable frame
     def perform_search(self, event=None):
@@ -594,6 +609,9 @@ class App_Screen(tk.Frame):
             # if the search query is a runner name, then we show the individual results according to the category of the runner
             elif is_runner_name :
                 self.show_individual_results(runner_searched.distance, runner_searched.sex, True, search_query)
+
+        # putting back the scrollable frame to the top
+        self.scroll_canvas.yview_moveto(0)
         
     # reset the scollable frame to its initial state (the text and gpx preview)
     def reset_screen(self, event=None):
@@ -689,7 +707,7 @@ class App_Screen(tk.Frame):
         long_map_label = tk.Label(long_map_group, image=self.long, bg="#282c34")
         long_map_label.pack()
       
-        # Scroll back to the top of the canvas (not needed here, but still useful to do in case)
+        # putting back the scrollable frame to the top
         self.scroll_canvas.yview_moveto(0)
        
     # handle mouse wheel scrolling
