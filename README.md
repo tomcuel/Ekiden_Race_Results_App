@@ -57,7 +57,7 @@ deactivate
 ```
 
 I used those librairies for this project : 
-'''py
+```py
 import openpyxl # using excel 
 import os # searching paths
 import re # regular expression
@@ -71,7 +71,7 @@ from tkinter import ttk # for more modern and and customizable widgets
 from tkinter import messagebox # for errors messages
 from tkinter import PhotoImage # for pictures 
 from PIL import Image, ImageTk # a better rezising
-'''
+```
 
 
 ## App preview 
